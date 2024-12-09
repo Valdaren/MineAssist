@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineAssist - Mobs</title>
+    <link rel="stylesheet" href="mobs_style.css">
+</head>
+<body>
+<header>
+    <h1><a href="../Home/index.html" style="text-decoration:none; color:white;">MineAssist</a></h1>
+</header>
+<main>
+    <section id="mob-input">
+        <input type="text" id="mobSearch" placeholder="Search for a mob..." autocomplete="off">
+        <div id="suggestions"></div>
+    </section>
+    <section id="mob-info">
+        <div class="info-box" id="release"><label>Release</label><div class="info-content" id="version-content" data-state="initial"></div></div>
+        <div class="info-box" id="health"><label>Health</label><div class="info-content" id="health-content" data-state="initial"></div></div>
+        <div class="info-box" id="height"><label>Height</label><div class="info-content" id="height-content" data-state="initial"></div></div>
+        <div class="info-box" id="behavior"><label>Behavior</label><div class="info-content" id="behavior-content" data-state="initial"></div></div>
+        <div class="info-box" id="spawn"><label>Spawn</label><div class="info-content" id="spawn-content" data-state="initial"></div></div>
+        <div class="info-box" id="classification"><label>Classification</label><div class="info-content" id="classification-content" data-state="initial"></div></div>
+    </section>
+    <button id="submitBtn">Submit</button>
+    <div id="error-message" style="color:red; display:none;">Please check to make sure everything has a selection before submitting.</div>
+    <div id="query-results" style="display:none;">
+        <h2>Query Results:</h2>
+        <ul id="results-list"></ul>
+    </div>
+</main>
+<footer>
+    <p>&copy; Bryce Dannenberg. 2024</p>
+</footer>
+<script src="mobs_script.js"></script>
+</body>
+</html>

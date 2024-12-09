@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineAssist - Blocks</title>
+    <link rel="stylesheet" href="blocks_style.css">
+</head>
+<body>
+<header>
+    <h1><a href="../Home/index.html" style="text-decoration:none; color:white;">MineAssist</a></h1>
+</header>
+<main>
+    <section id="block-input">
+        <input type="text" id="blockSearch" placeholder="Search for a block..." autocomplete="off">
+        <div id="suggestions"></div>
+    </section>
+    <section id="block-info">
+        <div class="info-box" id="release"><label>Release</label><div class="info-content" id="version-content" data-state="initial"></div></div>
+        <div class="info-box" id="stack-size"><label>Stack Size</label><div class="info-content" id="stack-size-content" data-state="initial"></div></div>
+        <div class="info-box" id="tools"><label>Tool(s)</label><div class="info-content" id="tools-content" data-state="initial"></div></div>
+        <div class="info-box" id="blast-resistance"><label>Blast Resistance</label><div class="info-content" id="blast-resistance-content" data-state="initial"></div></div>
+        <div class="info-box" id="hardness"><label>Hardness</label><div class="info-content" id="hardness-content" data-state="initial"></div></div>
+        <div class="info-box" id="flammable"><label>Flammable</label><div class="info-content" id="flammable-content" data-state="initial"></div></div>
+        <div class="info-box" id="full-block"><label>Full Block</label><div class="info-content" id="full-block-content" data-state="initial"></div></div>
+    </section>
+    <button id="submitBtn">Submit</button>
+    <div id="error-message" style="color:red; display:none;">Please check to make sure everything has a selection before submitting.</div>
+    <div id="query-results" style="display:none;">
+        <h2>Query Results:</h2>
+        <ul id="results-list"></ul>
+    </div>
+</main>
+<footer>
+    <p>&copy; Bryce Dannenberg. 2024</p>
+</footer>
+<script src="blocks_script.js"></script>
+</body>
+</html>
